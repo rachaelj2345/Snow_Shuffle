@@ -8,7 +8,7 @@ public class GameUI extends JFrame {
 
     public GameUI(GameBoard board, GameEngine engine) {
 
-        setTitle("Snow Problem - Task 1");  // sets window title
+        setTitle("Snow Problem");  // sets window title
         setSize(520, 450); //sets size
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close window when program closes
         setResizable(false); // set not resizable
