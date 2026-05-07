@@ -1,3 +1,7 @@
+//===========================================
+// identify what piece is in each position
+//===========================================
+
 
 public enum PieceType {
 
@@ -5,9 +9,9 @@ public enum PieceType {
     LARGE,
     SMALL,
     HEAD,
+    STACK,
+    SNOWMAN,
     EMPTY
 
 }
-
-// Identifiy what piece is in a position
 
