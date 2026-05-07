@@ -1,5 +1,5 @@
 //===========================================
-// Setting up the board
+// setting up the board
 //===========================================
 
 public class GameBoard {
@@ -9,9 +9,8 @@ public class GameBoard {
 
     private Piece[][] grid = new Piece[HEIGHT][WIDTH];
 
-//===========================================
-//Set 5 x 4 grid all empty
 
+    // set 5 x 4 grid all empty
     public GameBoard(){
         for (int y = 0; y < HEIGHT; y++){
             for(int x = 0; x < WIDTH; x++){
@@ -21,23 +20,25 @@ public class GameBoard {
         }
     }
 
-//===========================================
-// Return piece at position
-
+    // return piece at position
     public Piece get(int x,int y){
         return grid[y][x];
     }
 
-//===========================================
-// Set piece at position
 
+    // set piece at position
     public void set(int x, int y, Piece piece){
         grid[y][x] = piece;
     }
 
-//===========================================
-// 
+
     public Piece[][] getGrid(){
         return grid;
     }
+
+    // checks coords are inside board
+    public boolean inBounds(int x, int y) {
+        return x >= 0 && x < WIDTH && y >= 0 && y < HEIGHT;
+    } 
+
 }

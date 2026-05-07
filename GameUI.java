@@ -1,17 +1,22 @@
+//===========================================
+//main game window
+//===========================================
+
 import javax.swing.*;
 
 public class GameUI extends JFrame {
 
-    public GameUI(GameBoard board) {
+    public GameUI(GameBoard board, GameEngine engine) {
 
-        setTitle("Snow Problem - Task 1");
-        setSize(520, 450);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setResizable(false);
+        setTitle("Snow Problem - Task 1");  // sets window title
+        setSize(520, 450); //sets size
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close window when program closes
+        setResizable(false); // set not resizable
 
-        BoardPanel panel = new BoardPanel(board);
-        add(panel);
 
-        setVisible(true);
+        BoardPanel panel = new BoardPanel(board, engine);
+        add(panel); // adds game board panel to window
+
+        setVisible(true); // sets wondow visible
     }
 } 
